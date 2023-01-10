@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="fileValidation.js"></script>
+</head>
+<body>
+    <form action="page2.html" name="myForm" method="post" onsubmit="return page1Validation()" ;>
+        <table>
+            <th>
+                <h2>Student Details</h2>
+            </th>
+            <tr>
+                <td>
+                    <label>Name<span class="required">*</span></label><br>
+                    <input type="text" name="f_Name" style="width: 203px;" placeholder="First" autofocus>
+                    <input type="text" name="l_Name" style="width: 203px;" placeholder="Last">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date of Birth<span class="required">*</span></label> <br>
+                    <input type="date" style="width:410px" name="DOB">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email<span class="required">*</span></label> <br>
+                    <input type="text" name="Email" style="width: 410px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Father's Name<span class="required">*</span></label> <br>
+                    <input type="text" name="father_fname" style="width: 203px;" placeholder="First">
+                    <input type="text" name="father_lname" style="width: 203px;" placeholder="Last">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mother's Name<span class="required">*</span></label> <br>
+                    <input type="text" name="mother_fname" style="width: 203px;" placeholder="First">
+                    <input type="text" name="mother_lname" style="width: 203px;" placeholder="Last">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender<span class="required">*</span></label> <br>
+                    <input type="radio" name="gender"> M <br>
+                    <input type="radio" name="gender"> F
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nationality<span class="required">*</span></label> <br>
+                    <input type="text" name="nation" style="width: 410px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Home Address<span class="required">*</span></label> <br>
+                    <input type="text" name="add" placeholder="Street Address" style="width: 410px;"> <br><br>
+                    <input type="text" name="city" style="width: 203px;" placeholder="City">
+                    <input type="text" name="contry" style="width: 203px;" placeholder="Country">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Telephone-Home</label> <br>
+                    <input type="text" name="phn" style="width: 410px;" placeholder="### ### ####">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Telephone-Mobile<span class="required">*</span></label> <br>
+                    <input type="text" name="mobile" style="width: 410px;" placeholder="### ### ####"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <div style="text-align:right; margin-top: 10px;">
+                        <input type="submit" class="button" value="NEXT>>">
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
